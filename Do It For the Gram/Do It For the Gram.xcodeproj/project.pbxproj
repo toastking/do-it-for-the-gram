@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4127C7F78860F0DDE158F24 /* Pods_Do_It_For_the_Gram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B0763DA71FB4BAB797EAF8 /* Pods_Do_It_For_the_Gram.framework */; };
+		C976E5991C8D345200269FAE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C976E5981C8D345200269FAE /* LogInViewController.swift */; };
 		C9C80A991C8D2949000565C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C80A981C8D2949000565C1 /* AppDelegate.swift */; };
 		C9C80A9B1C8D2949000565C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C80A9A1C8D2949000565C1 /* ViewController.swift */; };
 		C9C80A9E1C8D2949000565C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C80A9C1C8D2949000565C1 /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B215E470C4C30A30A4BF9B0 /* Pods-Do It For the Gram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Do It For the Gram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Do It For the Gram/Pods-Do It For the Gram.release.xcconfig"; sourceTree = "<group>"; };
+		48B0763DA71FB4BAB797EAF8 /* Pods_Do_It_For_the_Gram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Do_It_For_the_Gram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C976E5981C8D345200269FAE /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		C9C80A951C8D2949000565C1 /* Do It For the Gram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Do It For the Gram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C80A981C8D2949000565C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9C80A9A1C8D2949000565C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		C9C80A9F1C8D2949000565C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9C80AA21C8D2949000565C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9C80AA41C8D2949000565C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D980BCDBA251CB76EB983D70 /* Pods-Do It For the Gram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Do It For the Gram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Do It For the Gram/Pods-Do It For the Gram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4127C7F78860F0DDE158F24 /* Pods_Do_It_For_the_Gram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D03C1C53F3D677DA9BF2D73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D980BCDBA251CB76EB983D70 /* Pods-Do It For the Gram.debug.xcconfig */,
+				3B215E470C4C30A30A4BF9B0 /* Pods-Do It For the Gram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A625E27574908E538553248B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48B0763DA71FB4BAB797EAF8 /* Pods_Do_It_For_the_Gram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9C80A8C1C8D2949000565C1 = {
 			isa = PBXGroup;
 			children = (
 				C9C80A971C8D2949000565C1 /* Do It For the Gram */,
 				C9C80A961C8D2949000565C1 /* Products */,
+				6D03C1C53F3D677DA9BF2D73 /* Pods */,
+				A625E27574908E538553248B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +83,7 @@
 				C9C80A981C8D2949000565C1 /* AppDelegate.swift */,
 				C9C80A9A1C8D2949000565C1 /* ViewController.swift */,
 				C9C80A9C1C8D2949000565C1 /* Main.storyboard */,
+				C976E5981C8D345200269FAE /* LogInViewController.swift */,
 				C9C80A9F1C8D2949000565C1 /* Assets.xcassets */,
 				C9C80AA11C8D2949000565C1 /* LaunchScreen.storyboard */,
 				C9C80AA41C8D2949000565C1 /* Info.plist */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9C80AA71C8D2949000565C1 /* Build configuration list for PBXNativeTarget "Do It For the Gram" */;
 			buildPhases = (
+				008B2CF9AE6F37D5BA7828D6 /* Check Pods Manifest.lock */,
 				C9C80A911C8D2949000565C1 /* Sources */,
 				C9C80A921C8D2949000565C1 /* Frameworks */,
 				C9C80A931C8D2949000565C1 /* Resources */,
+				2717FF63736C3550913BA921 /* Embed Pods Frameworks */,
+				53D129955E99A90CA7C7F5A7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +161,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		008B2CF9AE6F37D5BA7828D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2717FF63736C3550913BA921 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Do It For the Gram/Pods-Do It For the Gram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53D129955E99A90CA7C7F5A7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Do It For the Gram/Pods-Do It For the Gram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9C80A911C8D2949000565C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +216,7 @@
 			files = (
 				C9C80A9B1C8D2949000565C1 /* ViewController.swift in Sources */,
 				C9C80A991C8D2949000565C1 /* AppDelegate.swift in Sources */,
+				C976E5991C8D345200269FAE /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +325,7 @@
 		};
 		C9C80AA81C8D2949000565C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D980BCDBA251CB76EB983D70 /* Pods-Do It For the Gram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Do It For the Gram/Info.plist";
@@ -257,6 +337,7 @@
 		};
 		C9C80AA91C8D2949000565C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B215E470C4C30A30A4BF9B0 /* Pods-Do It For the Gram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Do It For the Gram/Info.plist";
@@ -285,6 +366,7 @@
 				C9C80AA91C8D2949000565C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
