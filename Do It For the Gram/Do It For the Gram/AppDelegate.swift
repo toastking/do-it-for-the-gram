@@ -28,6 +28,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://dry-atoll-61865.herokuapp.com/parse"
             })
     )
+        
+        //check if there's a currently logged in user
+        if PFUser.currentUser() != nil{
+            //segue to the main screen 
+            print("There is a current user!")
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("feedNavigationController")
+            //set the feed controller to the main controller
+            window?.rootViewController = vc
+        }else{
+            print("there is no currently logged in user")
+        }
         return true
     }
 

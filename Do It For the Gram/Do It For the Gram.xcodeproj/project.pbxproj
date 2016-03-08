@@ -10,10 +10,10 @@
 		B4127C7F78860F0DDE158F24 /* Pods_Do_It_For_the_Gram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B0763DA71FB4BAB797EAF8 /* Pods_Do_It_For_the_Gram.framework */; };
 		C976E5991C8D345200269FAE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C976E5981C8D345200269FAE /* LogInViewController.swift */; };
 		C9C80A991C8D2949000565C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C80A981C8D2949000565C1 /* AppDelegate.swift */; };
-		C9C80A9B1C8D2949000565C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C80A9A1C8D2949000565C1 /* ViewController.swift */; };
 		C9C80A9E1C8D2949000565C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C80A9C1C8D2949000565C1 /* Main.storyboard */; };
 		C9C80AA01C8D2949000565C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C80A9F1C8D2949000565C1 /* Assets.xcassets */; };
 		C9C80AA31C8D2949000565C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C80AA11C8D2949000565C1 /* LaunchScreen.storyboard */; };
+		C9F03C041C8F2460006FA190 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F03C031C8F2460006FA190 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +22,11 @@
 		C976E5981C8D345200269FAE /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		C9C80A951C8D2949000565C1 /* Do It For the Gram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Do It For the Gram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C80A981C8D2949000565C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9C80A9A1C8D2949000565C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9C80A9D1C8D2949000565C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9C80A9F1C8D2949000565C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9C80AA21C8D2949000565C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9C80AA41C8D2949000565C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9F03C031C8F2460006FA190 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		D980BCDBA251CB76EB983D70 /* Pods-Do It For the Gram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Do It For the Gram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Do It For the Gram/Pods-Do It For the Gram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,14 +81,22 @@
 			isa = PBXGroup;
 			children = (
 				C9C80A981C8D2949000565C1 /* AppDelegate.swift */,
-				C9C80A9A1C8D2949000565C1 /* ViewController.swift */,
 				C9C80A9C1C8D2949000565C1 /* Main.storyboard */,
-				C976E5981C8D345200269FAE /* LogInViewController.swift */,
+				C9F03C051C8F2465006FA190 /* View Controllers */,
 				C9C80A9F1C8D2949000565C1 /* Assets.xcassets */,
 				C9C80AA11C8D2949000565C1 /* LaunchScreen.storyboard */,
 				C9C80AA41C8D2949000565C1 /* Info.plist */,
 			);
 			path = "Do It For the Gram";
+			sourceTree = "<group>";
+		};
+		C9F03C051C8F2465006FA190 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9F03C031C8F2460006FA190 /* FeedViewController.swift */,
+				C976E5981C8D345200269FAE /* LogInViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9C80A9B1C8D2949000565C1 /* ViewController.swift in Sources */,
 				C9C80A991C8D2949000565C1 /* AppDelegate.swift in Sources */,
+				C9F03C041C8F2460006FA190 /* FeedViewController.swift in Sources */,
 				C976E5991C8D345200269FAE /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
