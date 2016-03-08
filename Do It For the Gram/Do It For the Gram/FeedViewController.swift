@@ -13,9 +13,6 @@ var user: PFUser!
 
 class FeedViewController: UIViewController {
 
-    @IBOutlet weak var profileButton: UITabBarItem!
-    @IBOutlet weak var photoButton: UITabBarItem!
-    @IBOutlet weak var homeButton: UITabBarItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +24,7 @@ class FeedViewController: UIViewController {
         }else{
             print("error getting user")
         }
-
+        
         // Do any additional setup after loading the view.
     }
 
