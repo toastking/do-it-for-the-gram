@@ -15,6 +15,8 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var postImageView: PFImageView!
     @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var timeStampLabel: UILabel!
+    @IBOutlet weak var likeCountLabel: UILabel!
     
     var post:Post!{
         didSet{
@@ -31,6 +33,32 @@ class PostTableViewCell: UITableViewCell {
             if let user = post.author{
                 self.usernameLabel.text = user.username
             }
+            
+            //get the current date
+            let date = NSDate()
+            let difference = date.timeIntervalSinceDate(post.createdAt!)
+            
+            var timeElapsed = Int(difference)
+            var timeUnits = "s"
+            if timeElapsed > 60{
+                timeElapsed /= 60
+                timeUnits = "m"
+                if timeElapsed > 60 {
+                    timeElapsed /= 60
+                    timeUnits = "h"
+                    
+                    if timeElapsed > 24{
+                        timeElapsed /= 24
+                        timeUnits = "d"
+                        
+                        if timeElapsed > 7{
+                            timeElapsed /= 7
+                            timeUnits = "w"
+                        }
+                    }
+                }
+            }
+            timeStampLabel.text = "\(timeElapsed) \(timeUnits)"
         }
     }
     
@@ -38,7 +66,6 @@ class PostTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        //TODO: add code for setting the cell
         
     }
 

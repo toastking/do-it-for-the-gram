@@ -125,7 +125,9 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="captionLabel" destination="2O6-Pv-Sdb" id="N28-pf-3Gc"/>
+                                            <outlet property="likeCountLabel" destination="d4J-KY-UMF" id="qG6-AM-fIY"/>
                                             <outlet property="postImageView" destination="ji2-lx-Zw9" id="BK8-UR-mdc"/>
+                                            <outlet property="timeStampLabel" destination="azR-j6-kKU" id="oUF-FG-r38"/>
                                             <outlet property="usernameLabel" destination="myj-q7-DWn" id="kAH-yt-fIE"/>
                                         </connections>
                                     </tableViewCell>

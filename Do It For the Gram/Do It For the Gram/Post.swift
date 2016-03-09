@@ -25,7 +25,7 @@ class Post: NSObject {
         self.caption = object["caption"] as? String
         self.likesCount = (object["likesCount"] as? Int) ?? 0
         self.commentsCount = (object["commentsCount"] as? Int) ?? 0
-        //self.createdAt = object["createdAt"] as? NSDate
+        self.createdAt = object.createdAt
     }
     
     //function to make an array of posts from input of pfobjects
