@@ -11,8 +11,11 @@ import Parse
 
 var user: PFUser!
 
-class FeedViewController: UIViewController {
+class FeedViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var posts: [Post]!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,7 +28,46 @@ class FeedViewController: UIViewController {
             print("error getting user")
         }
         
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        //make the request to get the images
+        // construct query
+        let query = PFQuery(className: "Post")
+        query.orderByDescending("createdAt")
+        query.includeKey("author") //include this becausae it's a pointer to another obejct
+        query.limit = 20
+        
+        // fetch data asynchronously
+        query.findObjectsInBackgroundWithBlock { (posts: [PFObject]?, error: NSError?) -> Void in
+            if let posts = posts {
+                //set the posts
+                self.posts = Post.postsFromObjects(posts)
+                
+                //reload the cells 
+                self.tableView.reloadData()
+                
+            } else {
+                print(error?.localizedDescription)
+            }
+        }
+        
+        
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCellWithIdentifier("PostCell", forIndexPath: indexPath) as! PostTableViewCell
+        //assign the business
+        cell.post = posts[indexPath.row]
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        if posts != nil{
+            return posts.count
+        }else{
+            return 0
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +81,7 @@ class FeedViewController: UIViewController {
         PFUser.logOut()
         
         //segue back to the login screen
-        self.performSegueWithIdentifier("feedToLoginSegue", sender: nil)
+       NSNotificationCenter.defaultCenter().postNotificationName("UserDidLogout", object: nil)
     }
     /*
     // MARK: - Navigation

@@ -65,8 +65,13 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     @IBAction func onSubmitPress(sender: AnyObject) {
-        
-        //TODO: add code to upload the image
+        Post.postImage(imageToAdd, withCaption: captionTextField.text) { (success:Bool, error:NSError?) -> Void in
+            if success {
+                print("image uploaded sucessfully")
+            }else{
+                print(error?.localizedDescription)
+            }
+        }
     }
     
     /*

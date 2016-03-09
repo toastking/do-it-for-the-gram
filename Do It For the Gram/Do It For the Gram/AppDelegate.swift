@@ -41,6 +41,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }else{
             print("there is no currently logged in user")
         }
+        
+        //check for the logout
+        NSNotificationCenter.defaultCenter().addObserverForName("UserDidLogout", object: nil, queue: NSOperationQueue.mainQueue()) { (NSNotification) -> Void in
+            //load the info for the current user and bypass authorization
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let viewController = storyboard.instantiateInitialViewController()
+            
+            //set the view controller back to the main view controller
+            self.window?.rootViewController = viewController
+            
+        }
+        
         return true
     }
 

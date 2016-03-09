@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		B4127C7F78860F0DDE158F24 /* Pods_Do_It_For_the_Gram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B0763DA71FB4BAB797EAF8 /* Pods_Do_It_For_the_Gram.framework */; };
+		C911CB051C8FE3F0007CE08B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C911CB041C8FE3F0007CE08B /* PostTableViewCell.swift */; };
 		C976E5991C8D345200269FAE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C976E5981C8D345200269FAE /* LogInViewController.swift */; };
 		C9C80A991C8D2949000565C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C80A981C8D2949000565C1 /* AppDelegate.swift */; };
 		C9C80A9E1C8D2949000565C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C80A9C1C8D2949000565C1 /* Main.storyboard */; };
 		C9C80AA01C8D2949000565C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C80A9F1C8D2949000565C1 /* Assets.xcassets */; };
 		C9F03C041C8F2460006FA190 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F03C031C8F2460006FA190 /* FeedViewController.swift */; };
 		C9F03C071C8F3BF6006FA190 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F03C061C8F3BF6006FA190 /* PostViewController.swift */; };
+		C9F03C091C8F8A8A006FA190 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F03C081C8F8A8A006FA190 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B215E470C4C30A30A4BF9B0 /* Pods-Do It For the Gram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Do It For the Gram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Do It For the Gram/Pods-Do It For the Gram.release.xcconfig"; sourceTree = "<group>"; };
 		48B0763DA71FB4BAB797EAF8 /* Pods_Do_It_For_the_Gram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Do_It_For_the_Gram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C911CB041C8FE3F0007CE08B /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		C976E5981C8D345200269FAE /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		C9C80A951C8D2949000565C1 /* Do It For the Gram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Do It For the Gram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C80A981C8D2949000565C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +30,7 @@
 		C9C80AA41C8D2949000565C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9F03C031C8F2460006FA190 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		C9F03C061C8F3BF6006FA190 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		C9F03C081C8F8A8A006FA190 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D980BCDBA251CB76EB983D70 /* Pods-Do It For the Gram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Do It For the Gram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Do It For the Gram/Pods-Do It For the Gram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +86,8 @@
 			children = (
 				C9C80A981C8D2949000565C1 /* AppDelegate.swift */,
 				C9C80A9C1C8D2949000565C1 /* Main.storyboard */,
+				C911CB041C8FE3F0007CE08B /* PostTableViewCell.swift */,
+				C9F03C0A1C8F8A8F006FA190 /* Models */,
 				C9F03C051C8F2465006FA190 /* View Controllers */,
 				C9C80A9F1C8D2949000565C1 /* Assets.xcassets */,
 				C9C80AA41C8D2949000565C1 /* Info.plist */,
@@ -97,6 +103,14 @@
 				C976E5981C8D345200269FAE /* LogInViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C9F03C0A1C8F8A8F006FA190 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9F03C081C8F8A8A006FA190 /* Post.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +239,8 @@
 				C9C80A991C8D2949000565C1 /* AppDelegate.swift in Sources */,
 				C9F03C041C8F2460006FA190 /* FeedViewController.swift in Sources */,
 				C976E5991C8D345200269FAE /* LogInViewController.swift in Sources */,
+				C9F03C091C8F8A8A006FA190 /* Post.swift in Sources */,
+				C911CB051C8FE3F0007CE08B /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
